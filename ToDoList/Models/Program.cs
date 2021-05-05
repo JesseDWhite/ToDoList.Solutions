@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Template.Solutions
+namespace ToDoList.Solutions
 {
   class Program
   {

@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Template.Models;
+using ToDoList.Models;
 
-namespace Template.TestTools
+namespace ToDoList.Solutions
 {
   [TestClass]
   public class Program
