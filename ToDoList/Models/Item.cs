@@ -1,12 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ToDoList.Models
 {
   public class Item
   {
-    static void Main()
+    public string Description { get; set; }
+    private static ToDoList<Item> _instances = new List<Item> { };
+    public static List<Item> GetAll()
     {
-      Console.WriteLine("Hello World!");
+      return _instances;
     }
+    public Item(string description)
+    {
+      Description = description;
+      _instances.Add(this);
+    }
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+
   }
 }
