@@ -6,4 +6,8 @@
     <RootNameSpace>ToDoList</RootNameSpace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Colorful.Console" Version="1.2.15" />
+  </ItemGroup>
+
 </Project>
