@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ToDoList.Solutions
+namespace ToDoList.Models
 {
-  class Program
+  public class Item
   {
     static void Main()
     {
