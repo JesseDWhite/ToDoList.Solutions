@@ -20,7 +20,9 @@ namespace UserInterface
         {
           Console.WriteLine("Great! What would you like to add?", Color.Green);
           string description1 = Console.ReadLine();
-          Item newItem = new Item(description1);
+          string priorityString = Console.ReadLine();
+          int priorityLevel = int.Parse(priorityString);
+          Item newItem = new Item(description1, priorityLevel);
           List<Item> newList = new List<Item> { newItem };
           Console.WriteLine(description1 + " has been added to your list.", Color.Green);
         }
