@@ -7,3 +7,16 @@ div#footer {
   background:#333;
   padding:8px;
 }
+h1 {
+  text-align: center;
+  color: #f4a261;
+}
+body {
+  margin: 20px;
+  background-color: #264653;
+  color: white;
+}
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

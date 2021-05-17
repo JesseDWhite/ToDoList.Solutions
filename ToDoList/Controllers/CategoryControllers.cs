@@ -7,14 +7,14 @@ namespace ToDoList.Controllers
 {
   public class CategoriesController : Controller
   {
-
+    //Homepage for all added categories.
     [HttpGet("/categories")]
     public ActionResult Index()
     {
       List<Category> allCategories = Category.GetAll();
       return View(allCategories);
     }
-
+    //Landing page where our form is kept.
     [HttpGet("/categories/new")]
     public ActionResult New()
     {
@@ -46,6 +46,7 @@ namespace ToDoList.Controllers
       Dictionary<string, object> model = new Dictionary<string, object>();
       Category foundCategory = Category.Find(categoryId);
       Item newItem = new Item(itemDescription);
+      newItem.Save();
       foundCategory.AddItem(newItem);
       List<Item> categoryItems = foundCategory.Items;
       model.Add("items", categoryItems);
